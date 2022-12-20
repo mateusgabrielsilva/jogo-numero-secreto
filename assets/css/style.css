@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-family:'Montserrat', sans-serif;
+    --bg-color: #0AA1DD;
+    --primary-color: #E8F9FD;
+}
+
+body {
+    width: 100%;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    padding: 10px;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 4em;
+    color: #01F508;
+}
+
+h3 {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.mensagem {
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
+.box {
+    border: 2px solid var(--primary-color);
+    display: inline-block;
+    font-size: 4em;
+    padding: 10px;
+    margin: 20px;
+}
+
+.btn-jogar {
+    padding: 8px 15px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background: var(--bg-color);
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+        color: #01F508;
+    }
+    
+    h3 {
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+    
+    .mensagem {
+        font-size: 1.2rem;
+        margin-top: 40px;
+    }
+    
+    .box {
+        border: 2px solid var(--primary-color);
+        display: inline-block;
+        font-size: 4em;
+        padding: 10px;
+        margin: 20px;
+    }
+}
